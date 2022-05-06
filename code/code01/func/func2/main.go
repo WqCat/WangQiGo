@@ -11,8 +11,8 @@ func testGlobal() {
 	fmt.Println("全局变量", num) //函数中有的话，不找去全局变量了
 }
 func main() {
-	fmt.Println(num)
-	testGlobal()
+	fmt.Println(num) //10
+	testGlobal()     //100
 	abc := testGlobal
 	fmt.Printf("%T\n", abc)
 	abc()

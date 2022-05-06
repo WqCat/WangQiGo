@@ -34,7 +34,7 @@ func intSum3(a ...int) int {
 
 //可变参数在固定参数后面
 //go语言函数无默认参数
-func intSum4(a int, b ...int) int {
+func intSum4(a int, b ...int) int { //b为int类型的切片
 	ret := a
 	for _, arg := range b {
 		ret = ret + arg
